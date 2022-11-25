@@ -1,0 +1,306 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+html {
+overflow-y: scroll;
+}
+a {
+text-decoration: none;
+}
+nav {
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+color: #fff;
+background: rgb(0, 0, 0);
+position: fixed;
+height: 50px;
+width: 100vw;
+z-index: 10;
+}
+
+#logo {
+margin-top: 10px;
+cursor: pointer;
+}
+#logo h3 {
+display: inline-block;
+}
+nav ul {
+margin-left: 400px;
+list-style: none;
+}
+nav ul li {
+display: inline-block;
+margin-top: 25px;
+margin-left: 8px;
+cursor: pointer;
+}
+nav ul li:hover {
+color: rgb(35, 176, 39);
+}
+#getSpotifyFree {
+background: linear-gradient(#fa00a9, #080708);
+height: 25rem;
+display: flex;
+justify-content: space-around;
+}
+
+#getSpotifyFree::after {
+content: "";
+background: linear-gradient(#e66465, #14141b);
+opacity: 0.3;
+z-index: 0;
+border-radius: 50%;
+width: 250px;
+height: 250px;
+}
+
+#getSpotifyFree::before {
+content: "";
+background: linear-gradient(#5964de, #9e2fc3);
+opacity: 0.4;
+border-radius: 50%;
+width: 250px;
+height: 250px;
+left: 150px;
+top: 150px;
+}
+
+#freeImageContainer {
+width: 492px;
+height: 550px;
+z-index: 5;
+}
+
+#svg {
+width: 12rem;
+height: 32rem;
+margin-top: 20px;
+filter: invert(100%) sepia(100%) saturate(95%) hue-rotate(66deg)
+  brightness(95%) contrast(80%);
+}
+
+#phoneShot {
+width: 168px;
+height: 268px;
+position: absolute;
+top: 132px;
+left: 357px;
+z-index: 0;
+}
+
+#playMillionSong {
+color: #fff;
+margin-left: -200px;
+font-size: 30px;
+margin-top: 120px;
+}
+
+#playMillionSong a {
+padding: 8px;
+color: #000;
+border-radius: 20px;
+background: #fff;
+font-size: 18px;
+}
+
+#playMillionSong a :hover {
+color: #ddd;
+}
+
+#whySpotify {
+display: flex;
+flex-direction: column;
+}
+#whySpotify h1 {
+text-align: center;
+margin: 20px;
+font-size: 30px;
+}
+
+#whySpotify main {
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+max-width: 1100px;
+margin: auto;
+}
+
+.circleMainContainer {
+margin-left: 50px;
+}
+
+.circleSvg {
+width: 150px;
+height: 150px;
+background: linear-gradient(#9198e9, #a900d2);
+border-radius: 50%;
+position: relative;
+}
+.circleSvg span {
+position: absolute;
+margin: 45px;
+
+color: #fff;
+}
+
+.circleMainContainer h3 {
+font-size: 20px;
+margin-top: 15px;
+margin-bottom: 15px;
+}
+
+.circleMainContainer p {
+color: #696969;
+font-size: 12px;
+}
+
+#itsFree {
+width: 100vw;
+height: 50vh;
+background: linear-gradient(#5962c9, #b262b2);
+margin-top: 15px;
+}
+
+#itsFree h1 {
+text-align: center;
+margin: 110px 400px;
+color: #fff;
+font-size: 45px;
+}
+#itsFree span {
+text-align: center;
+}
+
+#gotQuestion {
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+}
+
+#gotQuestion h1 {
+text-align: center;
+margin: 20px;
+font-size: 45px;
+font-weight: bolder;
+}
+
+.questionCard {
+margin: auto;
+}
+
+.questionCardHeading {
+background: #f8f8f8;
+padding: 35px;
+border: 0.1px solid #ccc;
+width: 800px;
+cursor: pointer;
+}
+
+.questionHide {
+display: none;
+}
+
+
+#Ready {
+width: 100vw;
+height: 50vh;
+background: linear-gradient(#ac2e84, #0b0a0b);
+margin-top: 20px;}
+footer {
+  width: 100vw;
+  height: 50vh;
+  background: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+#Ready h1 {
+color: #fff;
+text-align: center;
+margin-top: 110px;
+margin-bottom: 30px;
+font-size: 65px;
+}
+
+#Ready a {
+color: #000;
+background: #fff;
+padding: 10px;
+margin-left: 700px;
+border-radius: 50px;
+}
+#mainFoot {
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+margin-bottom: 65px;
+}
+#footerLinks ul li:first-of-type {
+  font-size: 10px;
+  color: #ccc;
+  font-weight: bolder;
+  cursor: unset;
+}
+#footerLinks {
+display: flex;
+flex-direction: row;
+}
+
+#footerLinks div {
+margin-top: 50px;
+margin-left: 100px;
+}
+#footerLinks ul li:first-of-type:hover {
+color: #ccc;
+}
+
+#footerLinks ul li {
+cursor: pointer;
+margin-bottom: 15px;
+}
+
+#socialFoot {
+  margin-top: 50px;
+}
+
+#footerLinks ul li:hover {
+color: greenyellow;
+}
+#footLoc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 10px;
+  color: #ccc;
+}
+#socialFoot span {
+margin-left: 10px;
+cursor: pointer;
+}
+#footLogo h3 {
+display: inline-block;
+}
+
+#footLoc span:first-of-type:hover {
+  color: greenyellow;
+}
+
+#tailFooter ul li {
+  display: inline-block;
+  margin-left: 20px;
+  font-size: 10px;
+  color: gray;
+  cursor: pointer;
+}
+#tailFooter {
+display: flex;
+justify-content: space-around;
+}
+#tailFooter ul li:hover {
+color: greenyellow;
+}
